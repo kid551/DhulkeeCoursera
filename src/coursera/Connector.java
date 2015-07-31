@@ -11,14 +11,14 @@ import javax.net.ssl.HttpsURLConnection;
 
 public class Connector {
 
-	private static final String SIGNINURL = "https://accounts.coursera.org/api/v1/login";
-
+	private static final String SIGNINURL = "https://www.coursera.org/api/login/v3";
 	private int responseCode;
 	private String cauthCookie;
 
 	private String email;
 	private String password;
-
+	private String webrequest = "true";
+	
 	public Connector(String email, String password) {
 		this.email = email;
 		this.password = password;
@@ -27,9 +27,10 @@ public class Connector {
 	public String connect() {
 
 		try {
-			String postData = String.format("email=%s&password=%s",
+			String postData = String.format("email=%s&password=%s&webrequest=%s",
 					URLEncoder.encode(email, "UTF-8"),
-					URLEncoder.encode(password, "UTF-8"));
+					URLEncoder.encode(password, "UTF-8"),
+					URLEncoder.encode(webrequest, "UTF-8"));
 
 			URL url = new URL(SIGNINURL);
 
