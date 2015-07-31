@@ -1,6 +1,5 @@
-# Dhulkee Coursera
-
-## Updating codes with the latest Coursera API
+# New Coursera Java Downloader
+Updating codes with the latest Coursera API. Also some development experience share.
 
 # Original Information
 [Dhulkee Coursera][1] is a GUI based application meant to batch download
