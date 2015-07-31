@@ -1,5 +1,8 @@
 # Dhulkee Coursera
 
+## Updating codes with the latest Coursera API
+
+# Original Information
 [Dhulkee Coursera][1] is a GUI based application meant to batch download
 videos from [Coursera][2]. It is much more functional than wget specifically
 in downloading videos from Coursera.org and easier to use than [coursera-dl][3].
