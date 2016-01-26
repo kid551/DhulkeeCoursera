@@ -4,7 +4,7 @@ import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 import javax.swing.UIManager;
 
-public class Main {
+public class Main{
 	
 	public static void createAndShowGui() {
 //		JFrame.setDefaultLookAndFeelDecorated(true);
@@ -38,5 +38,4 @@ public class Main {
 			}
 		});
 	}
-
 }
